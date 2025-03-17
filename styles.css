@@ -1,2 +1,27 @@
+.holder {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next row if they don't fit */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    gap: 10px; /* Adds space between items */
+}
 
-/* Your CSS Code here. */
+.item {
+    flex: 0 0 auto; /* Prevents items from squashing */
+    padding: 10px; /* Adds padding inside each item */
+    border: 1px solid #000; /* Optional: Adds border for better visibility */
+    text-align: center; /* Centers text inside the items */
+}
+
+/* Add specific colors to each item */
+.item:nth-child(1) {
+    background-color: red; /* Light red */
+}
+
+.item:nth-child(2) {
+    background-color: blue; /* Light blue */
+}
+
+.item:nth-child(3) {
+    background-color: green; /* Light green */
+}
